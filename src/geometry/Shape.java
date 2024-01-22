@@ -4,8 +4,7 @@ public abstract class Shape {
 
 		public double y;
 		public double x;
-		public abstract double circumference();
-		public abstract double area();
+		
 		
 		
 		public double getY() {

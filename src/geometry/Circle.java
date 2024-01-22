@@ -2,8 +2,8 @@ package geometry;
 
 public class Circle extends Shape{
 
-	public double radius;
-	public final double pi = 3.14;
+	private double radius;
+	private final double pi = 3.14;
 	
 	public Circle (double x, double y, double radius) {
 		this.setX(x);
@@ -15,7 +15,7 @@ public class Circle extends Shape{
 	/**
 	 * Calculates the circumference of the circle
 	 */
-	@Override
+
 	public double circumference() {
 		return ((2 * this.radius) * this.pi);
 	}
@@ -23,7 +23,6 @@ public class Circle extends Shape{
 	/**
 	 * Calculates the area of the circle
 	 */
-	@Override
 	public double area() {
 		return (this.pi * (this.radius * this.radius));
 	}

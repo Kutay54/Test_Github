@@ -2,10 +2,10 @@ package geometry;
 
 public class Triangle extends Shape{
 
-	public double a;
-	public double b;
-	public double c;
-	public double height;
+	private double a;
+	private double b;
+	private double c;
+	private double height;
 	
 	public Triangle (double x, double y, double a, double b, double c, double height) {
 		this.setX(x);
@@ -33,7 +33,6 @@ public class Triangle extends Shape{
 	/**
 	 * Calculates the circumference of the triangle
 	 */
-	@Override
 	public double circumference() {
 		return (this.a + this.b + this.c);
 	}
@@ -41,7 +40,6 @@ public class Triangle extends Shape{
 	/**
 	 * Calculates the area of the triangle
 	 */
-	@Override
 	public double area() {
 		return ((0.5 * this.a) * this.height);
 	}
