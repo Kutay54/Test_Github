@@ -20,10 +20,19 @@ public abstract class Shape {
 		public void setX(double x) {
 			this.x = x;
 		}
+		/**
+		 * Calculates the area of the body
+		 * @return
+		 */
 		public int calculateArea() {
 			// TODO Auto-generated method stub
 			return 0;
 		}
+		
+		/**
+		 * Calculates the circumference of the body
+		 * @return
+		 */
 		public double calculateCircumference() {
 			// TODO Auto-generated method stub
 			return 0;
