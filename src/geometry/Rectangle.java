@@ -16,14 +16,14 @@ public class Rectangle extends Shape {
 	/**
 	 * Calculates the circumference of the rectangle
 	 */
-	public double circumference() {
+	public double calculateCircumference() {
 		return((2 * this.length) *(2 * this.width));
 	}
 
 	/**
 	 * Calculates the area of the rectangle
 	 */
-	public double area() {
+	public double calculateArea() {
 		return (this.length * this.width);
 	}
 		 

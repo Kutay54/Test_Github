@@ -23,7 +23,7 @@ public abstract class Shape {
 		 * Calculates the area of the body
 		 * @return
 		 */
-		public int calculateArea() {
+		public double calculateArea() {
 			// TODO Auto-generated method stub
 			return 0;
 		}

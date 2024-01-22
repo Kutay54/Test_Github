@@ -15,6 +15,10 @@ public class Triangle extends Shape{
 		this.c = c;
 		this.height = height;
 	}
+	/**
+	 * searches the base
+	 * @return
+	 */
 	double base() {
 		double max = this.a;
 		if(this.b > this.c) {
@@ -33,14 +37,14 @@ public class Triangle extends Shape{
 	/**
 	 * Calculates the circumference of the triangle
 	 */
-	public double circumference() {
+	public double calculateCircumference() {
 		return (this.a + this.b + this.c);
 	}
 
 	/**
 	 * Calculates the area of the triangle
 	 */
-	public double area() {
+	public double calculateArea() {
 		return ((0.5 * this.a) * this.height);
 	}
 

@@ -16,14 +16,14 @@ public class Circle extends Shape{
 	 * Calculates the circumference of the circle
 	 */
 
-	public double circumference() {
+	public double calculateCircumference() {
 		return ((2 * this.radius) * this.pi);
 	}
 
 	/**
 	 * Calculates the area of the circle
 	 */
-	public double area() {
+	public double calculateArea() {
 		return (this.pi * (this.radius * this.radius));
 	}
 
