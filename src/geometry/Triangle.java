@@ -16,7 +16,7 @@ public class Triangle extends Shape{
 		this.height = height;
 	}
 	/**
-	 * searches the base
+	 * Searches the base
 	 * @return
 	 */
 	double base() {
