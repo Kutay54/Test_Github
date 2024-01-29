@@ -47,5 +47,9 @@ public class Triangle extends Shape{
 	public double calculateArea() {
 		return ((0.5 * this.a) * this.height);
 	}
+	@Override
+	public String toString() {
+		return "Triangle [a=" + a + ", b=" + b + ", c=" + c + ", height=" + height + "]";
+	}
 
 }

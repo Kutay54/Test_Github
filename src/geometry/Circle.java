@@ -27,4 +27,10 @@ public class Circle extends Shape{
 		return (this.pi * (this.radius * this.radius));
 	}
 
+
+	@Override
+	public String toString() {
+		return "Circle [radius=" + radius + ", pi=" + pi + "]";
+	}
+
 }

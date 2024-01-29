@@ -26,5 +26,11 @@ public class Rectangle extends Shape {
 	public double calculateArea() {
 		return (this.length * this.width);
 	}
-		 
+
+
+	@Override
+	public String toString() {
+		return "Rectangle [length=" + length + ", width=" + width + "]";
+	}
+	
 }
