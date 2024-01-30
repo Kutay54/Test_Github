@@ -1,5 +1,6 @@
 package theSocialNetwork;
 
-public class NewsFeed {
+public class NewsFeed extends Submission{
 
+		
 }
