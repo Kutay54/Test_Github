@@ -26,6 +26,11 @@ public class Photo extends Submission{
 	public void setFileName(String fileName) {
 		this.fileName = fileName;
 	}
+
+	@Override
+	public String toString() {
+		return super.toString() + "/n/t fileName=" + fileName + "/n/t headline=" + headline;
+	}
 	
 	
 }

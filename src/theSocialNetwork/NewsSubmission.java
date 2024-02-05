@@ -20,7 +20,7 @@ public class NewsSubmission extends Submission{
 
 	@Override
 	public String toString() {
-		return super.toString() + "NewsSubmission: /n contentsOfNews: " + contentsOfNews;
+		return super.toString() + "/n/t contentsOfNews: " + contentsOfNews;
 	}
 	
 	
