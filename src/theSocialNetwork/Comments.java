@@ -23,6 +23,10 @@ public class Comments {
 	public void setUser(String user) {
 		this.user = user;
 	}
+	@Override
+	public String toString() {
+		return "Comment: " + comment + "/n/t User:" + user;
+	}
 
  
 }
