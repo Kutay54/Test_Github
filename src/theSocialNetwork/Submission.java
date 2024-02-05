@@ -59,15 +59,17 @@ public abstract class Submission {
 	        long hours = TimeUnit.MILLISECONDS.toHours(diff);
 	        long days = TimeUnit.MILLISECONDS.toDays(diff);
 
+	        
 	        if (seconds < 60) {
 	            return "vor " + seconds + " Sekunden";
-	        } else if (minutes < 60) {
+	        } else if (minutes < 3600) {
 	            return "vor " + minutes + " Minuten";
-	        } else if (hours < 24) {
+	        } else if (hours < 86400) {
 	            return "vor " + hours + " Stunden";
-	        } else {
+	        } else if(days < 604800)
 	            return "vor " + days + " Tagen";
 	        }
+	 	
 	    }
 	 
 	 public void addComments(Comments comments) {
