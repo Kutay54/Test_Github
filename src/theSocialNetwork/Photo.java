@@ -3,8 +3,8 @@ package theSocialNetwork;
 
 public class Photo extends Submission{
 	
-	public String fileName;
-	public String headline;
+	private String fileName;
+	private String headline;
 	
 	public Photo(String username, String headline, String fileName) {
 		super(username);

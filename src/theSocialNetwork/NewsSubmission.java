@@ -1,10 +1,9 @@
 package theSocialNetwork;
 
 
-
 public class NewsSubmission extends Submission{
 
-	public String contentsOfNews;
+	private String contentsOfNews;
 	
 	public NewsSubmission(String username,String contentsOfNews) {
 		super(username);

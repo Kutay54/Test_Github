@@ -22,9 +22,6 @@ public abstract class Submission {
 	}
 
 
-	
-
-
 	public String getUsername() {
 		return username;
 	}
@@ -50,7 +47,7 @@ public abstract class Submission {
 	}
 	
 	
-	 public static String getTimeAgo(long millis) {
+	 public static void getTimeAgo(long millis) {
 	        long currentTime = System.currentTimeMillis();
 	        long diff = currentTime - millis;
 
@@ -58,19 +55,29 @@ public abstract class Submission {
 	        long minutes = TimeUnit.MILLISECONDS.toMinutes(diff);
 	        long hours = TimeUnit.MILLISECONDS.toHours(diff);
 	        long days = TimeUnit.MILLISECONDS.toDays(diff);
-
+	        long months = TimeUnit.MILLISECONDS.toDays(diff) * 30;
+	        long year = TimeUnit.MILLISECONDS.toDays(diff) * 365;
 	        
 	        if (seconds < 60) {
-	            return "vor " + seconds + " Sekunden";
-	        } else if (minutes < 3600) {
-	            return "vor " + minutes + " Minuten";
-	        } else if (hours < 86400) {
-	            return "vor " + hours + " Stunden";
-	        } else if(days < 604800)
-	            return "vor " + days + " Tagen";
+	        	System.out.println("vor " + seconds + " Sekunden");;
+	        } 
+	         else if (minutes < 3600) {
+	            System.out.println("vor " + minutes + " Minuten");;
+	        } 
+	         else if (hours < 86400) {
+	            System.out.println("vor " + hours + " Stunden");;
+	        } 
+	         else if(days < 604800) {
+	        	 System.out.println("vor " + days + " Tagen");
 	        }
-	 	
-	    }
+			 else if(months < 604800 * 30) {
+				 System.out.println("vor " + months + " Monaten");
+			}
+			 else if(year < 604800 * 365) {
+				System.out.println("vor " + year + " Jahren");
+		     }
+	   } 
+
 	 
 	 public void addComments(Comments comments) {
 		 this.comments.add(comments);
