@@ -17,6 +17,12 @@ public class NewsSubmission extends Submission{
 	public void setContentsOfNews(String contentsOfNews) {
 		this.contentsOfNews = contentsOfNews;
 	}
+
+	@Override
+	public String toString() {
+		return super.toString() + "NewsSubmission: /n contentsOfNews: " + contentsOfNews;
+	}
+	
 	
 	
 }

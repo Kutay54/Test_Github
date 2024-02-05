@@ -92,5 +92,13 @@ public abstract class Submission {
 			 System.out.println(c);
 		 }
 	 }
+
+
+	@Override
+	public String toString() {
+		return "Username: " + username + "/n/t timestamp: " + timestamp + "/n/t likes: " + likes + 
+				"/n/t comments: " + comments;
+	}
 	
+	 
 }
