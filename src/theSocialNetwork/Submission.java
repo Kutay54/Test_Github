@@ -6,10 +6,10 @@ import java.util.concurrent.TimeUnit;
 
 public abstract class Submission {
 	
-	public String username;
-	public LocalDate timestamp;
-	public int likes;
-	public ArrayList<Comments> comments = new ArrayList<>();
+	private String username;
+	private LocalDate timestamp;
+	private int likes;
+	private ArrayList<Comments> comments = new ArrayList<>();
 	
 	
 	
