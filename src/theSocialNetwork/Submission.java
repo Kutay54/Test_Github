@@ -47,6 +47,10 @@ public abstract class Submission {
 	}
 	
 	
+	 /**
+	  * Calculates at what time a post has been posted
+	  * @param millis
+	  */
 	 public static void calculateTimeStamp(long millis) {
 	        long currentTime = System.currentTimeMillis();
 	        long diff = currentTime - millis;
@@ -78,15 +82,26 @@ public abstract class Submission {
 		     }
 	   } 
 
-	 
+	 /**
+	  * Adds a new comment
+	  * @param comments
+	  */
 	 public void addComments(Comments comments) {
 		 this.comments.add(comments);
 	 }
 	 
+	 /**
+	  * Deletes a comment 
+	  * @param comments
+	  */
 	 public void removeComments(Comments comments) {
 		 this.comments.remove(comments);
 	 }
 	 
+	 /**
+	  * Gives us all the comments
+	  * @param comments
+	  */
 	 public void printAllComments() {
 		 for(Comments c : this.comments) {
 			 System.out.println(c);
