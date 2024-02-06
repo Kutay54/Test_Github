@@ -114,6 +114,9 @@ public abstract class Submission {
 		return "Username: " + username + "/n/t timestamp: " + timestamp + "/n/t likes: " + likes + 
 				"/n/t comments: " + comments;
 	}
+
+
+
 	
 	 
 }
