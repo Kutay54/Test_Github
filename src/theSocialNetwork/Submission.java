@@ -9,7 +9,7 @@ public abstract class Submission {
 	private String username;
 	private LocalDate timestamp;
 	private int likes;
-	private ArrayList<Comments> comments = new ArrayList<>();
+	private ArrayList<Comments> comments;
 	
 	
 	
@@ -47,7 +47,7 @@ public abstract class Submission {
 	}
 	
 	
-	 public static void getTimeAgo(long millis) {
+	 public static void calculateTimeStamp(long millis) {
 	        long currentTime = System.currentTimeMillis();
 	        long diff = currentTime - millis;
 
