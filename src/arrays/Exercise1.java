@@ -2,7 +2,7 @@ package arrays;
 
 import java.lang.reflect.Array;
 
-public class Aufgabe1 {
+public class Exercise1 {
 
 	
 	int[] dailyGains = {1000,2000,500,9000,9010};
