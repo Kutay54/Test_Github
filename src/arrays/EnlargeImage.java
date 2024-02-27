@@ -9,7 +9,7 @@ public class EnlargeImage {
 	int[][]magnify(int[][]array, int factor) {
 		int factor1 = 2;
 		int newWidth = array[0].length * factor1;
-		int newLength = array[0].length * factor1;
+		int newLength = array.length * factor1;
 		int[][] newMatrix = new int[newLength][newWidth];
 		
 		int value = 1;
