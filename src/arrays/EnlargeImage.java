@@ -1,6 +1,6 @@
 package arrays;
 
-public class enlargeImage {
+public class EnlargeImage {
 	
 	
 	int[][] matrix = new int [2][3];
