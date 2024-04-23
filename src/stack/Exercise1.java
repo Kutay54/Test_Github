@@ -5,15 +5,20 @@ import java.util.LinkedList;
 public class Exercise1 {
 
 	public static String reverseString(String input) {
-		LinkedList<Character> list = new LinkedList<Character>();
-		char[] reverseList = new char[input.length()];
-		for(int i = 0; i < input.length(); i++) {
-			list.push(input.charAt(i));
+		LinkedList<Character> stack = new LinkedList<Character>();
+		for(char c : input.toCharArray()) {
+			stack.push(c);
 		}
-		for(int i = 0; i < input.length(); i++) {
-			reverseList[i] = list.pop();
+		StringBuilder reversedString = new StringBuilder();
+		while(!stack.isEmpty()) {
+			reversedString.append(stack.pop());
 		}
-		return String.valueOf(reverseList);
+			return reversedString.toString();
+	
 	}
 	
+	public static void main(String[] args) {
+		System.out.println("Hello World!");
+		System.out.println(reverseString("Hello World!"));
+	}
 }

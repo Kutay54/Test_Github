@@ -1,11 +1,12 @@
 package stack;
 
+import java.util.LinkedList;
 import java.util.Stack;
 
 public class CorrectBrackets {
 
 	public static boolean isCorrectBracket(String input) {
-		Stack <Character> stack = new Stack<>();
+		LinkedList<Character> stack = new LinkedList<>();
 		
 		for(char c : input.toCharArray()) {
 			if( c == '(' || c == '{' || c == '[') {
@@ -15,28 +16,20 @@ public class CorrectBrackets {
 					return false;
 				}
 			}	
-			char last = stack.pop();
-			if( c == ')' || last!= '(') {
+			char last = stack.peek();
+			if((c == ')' && last!= '(') ||
+				( c == '}' && last!= '{')||
+				( c == ']' && last!= '['))	{
 				return false;
 				}
-			if( c == '}' || last!= '{') {
-				return false;
-			}
-			if( c == ']' || last!= '[') {
-				return false;
-			}
-			
+			stack.pop();
 		}
-		return false;
+		return stack.isEmpty();
 	}
 	
 	public static void main(String[] args) {
-		String input = ""; 
 		
-		if(isCorrectBracket(input)) {
-			System.out.println("Korrekte Klammerung!");
-		}else
-			System.out.println("Fehlerhafte Klammerung");
+		System.out.println(isCorrectBracket("()"));
 	}
 }
 
