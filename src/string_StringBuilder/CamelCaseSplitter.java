@@ -20,7 +20,8 @@ public class CamelCaseSplitter {
 		
 		System.out.println(camelCaseSplitter("numberOfElement"));
 		System.out.println(camelCaseSplitter("DieseaufgabeIstErledigt"));
-
+		System.out.println(camelCaseSplitter("HALLO"));
+		System.out.println(camelCaseSplitter("MmKKkjhJHjhJHjJHjhIji"));
 	}
 
 }
