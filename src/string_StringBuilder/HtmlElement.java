@@ -26,6 +26,7 @@ public class HtmlElement {
 		System.out.println(htmlElement("strong", "strong is bold"));
 		System.out.println(strong("BABA"));
 		System.out.println(emphasized("jxgdhf"));
+		System.out.println(htmlElement("","testestest"));
 	}
 
 }
