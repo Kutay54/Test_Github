@@ -22,6 +22,7 @@ public class HtmlElement {
 	}
 	
 	
+	
 	public static void main(String[] args) {
 		System.out.println(htmlElement("strong", "strong is bold"));
 		System.out.println(strong("BABA"));
